@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+
+# Environment
+.env
+
+# Database
+data/contracts.db
+
+# Runtime Playwright persistent-context dir (created by the launch-mode engine)
+data/browser_profile/
+
+# IDE
+.vscode/
+.idea/
+
+# Project
+.superpowers/
+.backend.log
+.frontend.log
+
+# Personal resume — kept local, never published to the remote
+data/resume/
+data/resume.pdf
+
+# OS
+.DS_Store
+Thumbs.db
+data/apply_artifacts/
+data/resume_full.pdf
+
+# Per-person profile bundle (each user keeps their own; never published).
+# Anchored to the repo root so it does NOT match tests/fixtures/profile/.
+/profile/
+data/profile.yaml
+data/case-studies/
+
+# Private strategy / council artifacts (internal only)
+docs/profile-content-ai-data-builder.md
+docs/braintrust-wellfound-plan.md
+docs/council-report-*.html
+docs/council-transcript-*.md

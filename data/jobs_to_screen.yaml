@@ -1,0 +1,41 @@
+# Paste real job listings here, then run:
+#   PYTHONPATH=. python scripts/screen_and_store_jobs.py
+# description_fit is a 0..1 grade of how well the description (not just tags)
+# fits Pat's AI + Python positioning. Jobs below auto_skip_threshold
+# (data/profile.yaml) are stored as "skipped" with no generated application.
+
+- external_id: job-strong-fde
+  platform: seed
+  title: Forward Deployed AI Engineer (Claude API, Python)
+  url: https://example.com/jobs/fde
+  description: >
+    We embed engineers with enterprise customers to ship LLM-powered workflows.
+    You will design Claude API integrations, build Python data pipelines, and
+    turn messy business problems into production AI systems.
+  skills_required:
+    - Python
+    - Claude API
+    - LLM Prompt Engineering
+    - API Integration
+    - Data Pipeline
+    - AI Agent Development
+  description_fit: 0.92
+  client_questions:
+    - Describe a time you shipped an AI system for a non-technical stakeholder.
+    - What is your experience integrating LLM APIs into production data pipelines?
+
+- external_id: job-weak-java
+  platform: seed
+  title: Senior Java Backend Engineer (Spring, Kafka)
+  url: https://example.com/jobs/java
+  description: >
+    Maintain a high-throughput Java microservices platform. Deep Spring Boot,
+    Kafka, and JVM tuning experience required. No AI/ML work.
+  skills_required:
+    - Java
+    - Spring Boot
+    - Kafka
+    - Microservices
+    - JVM
+  description_fit: 0.05
+  client_questions: []

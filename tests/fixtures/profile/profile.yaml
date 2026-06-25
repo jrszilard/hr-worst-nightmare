@@ -1,0 +1,29 @@
+name: Pat
+studio: Sample Studio
+positioning: "Data and AI consultant building dashboards, pipelines, and AI workflows."
+location: Vermont
+framing: "a Sample Studio partnership"
+hourly_rate_range: [75, 150]
+tone: "Professional yet approachable."
+selling_points:
+  - "End-to-end data solutions"
+  - "Production AI/LLM integration"
+key_differentiators:
+  reporting:
+    description: "Power BI and Tableau dashboards"
+    skills: [Power BI, Tableau, SQL, DAX]
+  ai:
+    description: "Production AI/LLM solutions"
+    skills: [Python, Anthropic Claude API, RAG pipelines]
+auto_skip_threshold: 0.15
+applicant:
+  first_name: Pat
+  last_name: Sample
+  email: pat@example.com
+  phone: "555-0100"
+  resume_path: resume.pdf
+  country: United States
+  work_authorization: US Citizen
+  needs_sponsorship: false
+  linkedin: https://example.com/in/pat
+  website: https://example.com

@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+aiosqlite
+anthropic
+pyyaml
+httpx
+mcp
+pydantic
+pydantic-settings
+# dev / test
+pytest
+pytest-asyncio
+respx
+reportlab
+pypdf

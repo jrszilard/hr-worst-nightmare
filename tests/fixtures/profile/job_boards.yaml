@@ -1,0 +1,136 @@
+# data/job_boards.yaml — company boards to watch for full-time / staff-style jobs.
+#
+# Greenhouse: boards.greenhouse.io/<token>
+# Lever:      jobs.lever.co/<company>
+# Ashby:      jobs.ashbyhq.com/<company>
+#
+# These public APIs are company-board APIs, not global search. Add/remove company slugs
+# here to control the watched universe; criteria below narrows postings before the normal
+# skill/preference scorer stores candidates.
+
+greenhouse:
+  - anthropic
+  - databricks
+  - scaleai
+  - stripe
+  - figma
+  - airtable
+  - mongodb
+  - reddit
+  - discord
+  - asana
+  - brex
+  - gitlab
+  - cloudflare
+  - twilio
+  - pinterest
+  - dropbox
+  - instacart
+  - roblox
+  - duolingo
+  - hextechnologies
+  - vercel
+  - lyft
+
+lever: []
+
+ashby:
+  - openai
+  - notion
+  - cursor
+  - modal
+  - linear
+  - runway
+  - ashby
+
+criteria:
+  # Store only US-based postings. Generic "Remote" without an explicit US signal is
+  # treated as ambiguous and filtered out.
+  us_only: true
+
+  # Keep roles whose title is clearly in the data / AI / analytics / platform lane.
+  title_include_any:
+    - ai
+    - artificial intelligence
+    - machine learning
+    - data
+    - analytics
+    - data analyst
+    - product analyst
+    - business intelligence
+    - bi
+    - data scientist
+    - data engineer
+    - analytics engineer
+    - solutions engineer
+    - forward deployed
+    - developer platform
+    - automation
+    - tableau
+    - power bi
+
+  # Also keep roles where the title is generic but the posting text has multiple strong
+  # AI/data signals. Avoid generic single skills like Python/SQL here; those appear in
+  # almost every software role and are handled later by the skill scorer.
+  text_include_min: 2
+  text_include_any:
+    - claude
+    - llm
+    - large language model
+    - rag
+    - ai agent
+    - agentic
+    - etl
+    - data pipeline
+    - data visualization
+    - tableau
+    - power bi
+    - business intelligence
+    - analytics engineering
+    - workflow automation
+
+  # Generic titles can still qualify if the board mapper extracted multiple profile skills.
+  # This avoids filtering by title/name alone without admitting one-skill false positives.
+  skills_include_min: 2
+  skills_include_any:
+    - Python
+    - SQL
+    - Data modeling
+    - Data Visualization
+    - Tableau
+    - Power BI
+    - DAX
+    - Pandas
+    - ETL
+    - REST APIs
+    - Database design
+    - Process automation
+    - LangChain
+    - Anthropic Claude API
+    - OpenAI API
+    - RAG pipelines
+    - AI agents
+
+  # Exclude obvious non-fit business/G&A/recruiting/sales/legal roles that can otherwise
+  # sneak in through generic Excel/SQL mentions.
+  exclude_title_any:
+    - account executive
+    - sales development
+    - recruiter
+    - recruiting
+    - counsel
+    - legal
+    - payroll
+    - tax
+    - accounting
+    - transaction manager
+    - transaction principal
+    - executive assistant
+    - workplace
+    - facilities
+    - procurement
+    - financial analyst
+    - fp&a
+    - marketing operations
+    - marketing
+    - g&a

@@ -1,0 +1,96 @@
+searches:
+  - name: "AI Data Analysis"
+    query: "AI data analysis python"
+    category: ai
+    filters:
+      experience_level: ["intermediate", "expert"]
+      budget_min: 1000
+      job_type: ["fixed", "hourly"]
+
+  - name: "LLM Integration"
+    query: "LLM integration Claude API"
+    category: ai
+    filters:
+      experience_level: ["intermediate", "expert"]
+      budget_min: 1000
+      job_type: ["fixed", "hourly"]
+
+  - name: "AI Agent Pipeline"
+    query: "AI agent automation pipeline python"
+    category: ai
+    filters:
+      experience_level: ["intermediate", "expert"]
+      budget_min: 1000
+      job_type: ["fixed", "hourly"]
+
+  - name: "Python Data Engineering"
+    query: "Python data pipeline ETL analytics"
+    category: data
+    filters:
+      experience_level: ["intermediate", "expert"]
+      budget_min: 500
+      job_type: ["fixed", "hourly"]
+
+  - name: "Power BI"
+    query: "Power BI dashboard"
+    category: reporting
+    filters:
+      experience_level: ["intermediate", "expert"]
+      budget_min: 500
+      job_type: ["fixed", "hourly"]
+
+  - name: "Tableau"
+    query: "Tableau dashboard visualization"
+    category: reporting
+    filters:
+      experience_level: ["intermediate", "expert"]
+      budget_min: 500
+      job_type: ["fixed", "hourly"]
+
+  - name: "RAG & Document AI"
+    query: "RAG document extraction LLM pipeline"
+    category: ai
+    filters:
+      experience_level: ["intermediate", "expert"]
+      budget_min: 1000
+      job_type: ["fixed", "hourly"]
+
+  - name: "Claude & MCP"
+    query: "Claude API MCP AI agent"
+    category: ai
+    filters:
+      experience_level: ["intermediate", "expert"]
+      budget_min: 1000
+      job_type: ["fixed", "hourly"]
+
+  - name: "Data Analyst"
+    query: "data analyst reporting SQL"
+    category: data
+    filters:
+      experience_level: ["intermediate", "expert"]
+      budget_min: 500
+      job_type: ["fixed", "hourly"]
+
+  - name: "Analytics Platform"
+    query: "analytics platform dashboard API"
+    category: data
+    filters:
+      experience_level: ["intermediate", "expert"]
+      budget_min: 500
+      job_type: ["fixed", "hourly"]
+
+  - name: "Reporting Automation"
+    query: "automated reporting PowerPoint Excel"
+    category: reporting
+    filters:
+      experience_level: ["intermediate", "expert"]
+      budget_min: 500
+      job_type: ["fixed", "hourly"]
+
+  - name: "Metabase & BI Tools"
+    query: "Metabase Looker business intelligence"
+    category: reporting
+    filters:
+      experience_level: ["intermediate", "expert"]
+      budget_min: 500
+      job_type: ["fixed", "hourly"]

@@ -1,0 +1,8 @@
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+addopts = "-m 'not browser and not aiinbrowser'"
+markers = [
+    "browser: integration tests that launch a real browser (run with -m browser; needs `playwright install chromium`)",
+    "aiinbrowser: gated tests that drive the user's real Brave via the ai-in-browser MCP adapter (run with -m aiinbrowser; needs the extension loaded + the sibling repo)",
+]

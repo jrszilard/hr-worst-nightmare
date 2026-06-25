@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <body>
+    <!-- Mimics a react-select combobox: an input[role=combobox] plus a menu of
+         [id^="react-select-<id>-option"] options, so PlaywrightEngine.snapshot()
+         exercises its combobox option-reading without needing React. -->
+    <form>
+      <label for="country">Country</label>
+      <input id="country" role="combobox" type="text" aria-label="Country" />
+      <div id="react-select-country-option-0" role="option">United States</div>
+      <div id="react-select-country-option-1" role="option">Canada</div>
+    </form>
+  </body>
+</html>

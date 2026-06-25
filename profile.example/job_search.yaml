@@ -1,0 +1,36 @@
+queries:
+  - "Business Intelligence Engineer"
+  - "Data Analyst"
+  - "Data Engineer"
+  - "Analytics Engineer"
+  - "Reporting Analyst"
+  - "Applied AI Engineer"
+  - "AI Engineer"
+  - "AI Data Analyst"
+  - "AI Analytics Engineer"
+  - "AI Automation Engineer"
+  - "LLM Engineer"
+  - "Forward Deployed Engineer"
+  - "AI Solutions Engineer"
+location: "United States"
+remote_only: true
+pages_per_query: 1
+deprioritize_nudge: -0.15
+# Companies you find over-competitive or otherwise want to deprioritize.
+# Add or remove slugs to suit your preferences.
+deprioritize_companies:
+  - Anthropic
+  - OpenAI
+  - Databricks
+  - Stripe
+  - Google
+  - Meta
+  - Microsoft
+  - Amazon
+  - Apple
+  - Netflix
+  - Nvidia
+  - Figma
+  - Notion
+  - Discord
+  - Reddit
